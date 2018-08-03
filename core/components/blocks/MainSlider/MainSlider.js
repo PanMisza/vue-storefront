@@ -14,9 +14,8 @@ export default {
     }
   },
   mounted () {
-    const self = this
     setInterval(() => {
-      self.currentSlide = (self.currentSlide + 1) % (self.totalSlides)
-    }, 5000)
+      this.currentSlide = (this.currentSlide + 1) % (this.totalSlides)
+    }, 1000)
   }
 }
